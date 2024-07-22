@@ -21,8 +21,7 @@ function longestCommonPrefix(strs: string[]): string {
         for (let j = 0; j < strs.length - 1; j++) {
             if (strs[j].substring(0, i + 1) !== strs[j + 1].substring(0, i + 1)) {
                 return strs[0].substring(0, i)
-            } else {
-            }
+            } 
         }
         i++;
     }
